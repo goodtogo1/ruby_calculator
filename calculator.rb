@@ -25,9 +25,7 @@ def get_input_new
 end
 
 def check_input_num(num, zero_input)
-  if(num.is_a?(Integer) || num.is_a?(Float) || zero_input)
-    return
-  elsif
+  if(num == 0) && (!zero_input)
     puts "Entry must be a number. Please try again."
     get_input_new
   end
